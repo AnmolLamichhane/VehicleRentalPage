@@ -1,0 +1,129 @@
+body{
+    background-image: url(/img/bg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.box{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40% );
+    width: 500px;
+    height: 400px;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    box-shadow: 0px 0px 60px rgb(158, 157, 157);
+    }
+    .box h1 {
+        margin-top: 0;
+        color: rgb(226, 226, 226);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid silver;
+    border-radius: 20px 20px 0px 0px;
+    }
+    .box form {
+    padding: 20px 100px 0px;
+    box-sizing: border-box;
+    position: relative;
+                }
+
+                form .txt_field{
+                    position: relative;
+                    border-bottom: 2px solid #adadad;
+                    margin: 30px 0;
+                    }
+                    .txt_field input {
+                    width: 100%;
+                    padding: 0 5px;
+                    height: 40px;
+                    font-size: 16px;
+                    border: none;
+                    background: none;
+                    outline: none;
+                    }
+                    .txt_field label{
+                    position: absolute;
+                    top: 50%;
+                    left: 5px;
+                    color:#adadad;
+                    transform: translateY(-50%);
+                    font-size: 16px;
+                    pointer-events: none;
+                    transition: .5s;
+                    }
+                    .txt_field span::before{
+                    content:'';
+                    position: absolute;
+                    top: 40px;
+                    left:0;
+                    width: 100%;
+                    height: 2px;
+                    background: #55a1d3;
+                    
+                    }
+                    .txt_field input:focus ~ label,
+                    .txt_field input:valid ~ label{
+                    top: -5px;
+                    color: #2691d9;
+                    } 
+
+                    .btn {
+                        margin-left: 95px;
+                        margin-bottom: 60px;
+                        background: transparent;
+                        background-image: -webkit-linear-gradient(top, #80c6f5, #297cb0);
+                        background-image: -moz-linear-gradient(top, #80c6f5, #297cb0);
+                        background-image: -ms-linear-gradient(top, #80c6f5, #297cb0);
+                        background-image: -o-linear-gradient(top, #80c6f5, #297cb0);
+                        background-image: linear-gradient(to bottom, #80c6f5, #297cb0);
+                        -webkit-border-radius: 28;
+                        -moz-border-radius: 28;
+                        border-radius: 28px;
+                        font-family: Arial;
+                        color: #ffffff;
+                        font-size: 20px;
+                        padding: 10px 30px 10px 30px;
+                        text-decoration: none;
+                    }
+                    
+                    .btn:hover {
+                        background: #8ad8ff;
+                        background-image: -webkit-linear-gradient(top, #8ad8ff, #4da9de);
+                        background-image: -moz-linear-gradient(top, #8ad8ff, #4da9de);
+                        background-image: -ms-linear-gradient(top, #8ad8ff, #4da9de);
+                        background-image: -o-linear-gradient(top, #8ad8ff, #4da9de);
+                        background-image: linear-gradient(to bottom, #8ad8ff, #4da9de);
+                        text-decoration: none;
+                    }
+
+.users_signup
+                {
+    position: absolute;
+    left: 10px;   
+        text-align: center;
+        text-decoration: none;
+
+    }
+.forgot
+    {
+        margin-left: 250px;
+        width: 90%;
+        text-decoration: none;
+
+    }
+    
+a{
+    color: aqua;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
